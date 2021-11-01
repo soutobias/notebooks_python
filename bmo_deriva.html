@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e84967ac0ef14cf2ac39f8d5b4b60a2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e84967ac0ef14cf2ac39f8d5b4b60a2e" ></div>
+        
+</body>
+<script>    
+    
+            var map_e84967ac0ef14cf2ac39f8d5b4b60a2e = L.map(
+                "map_e84967ac0ef14cf2ac39f8d5b4b60a2e",
+                {
+                    center: [-25.5058, -42.7241],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8aed26a9a381444ab5b90ab95f952656 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var marker_77d5e965a0b84ffdae8599374cb15bef = L.marker(
+                [-25.5159, -42.7268],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_77d5e965a0b84ffdae8599374cb15bef.bindTooltip(
+                `<div>
+                     2021-10-10 00:00:00 - veloc nannós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6341fca671e418ba7f40e5fdbe81271 = L.marker(
+                [-25.5157, -42.7268],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_e6341fca671e418ba7f40e5fdbe81271.bindTooltip(
+                `<div>
+                     2021-10-10 01:00:00 - veloc 0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5220626bf714b7185aab33e13f44bc7 = L.marker(
+                [-25.5154, -42.7267],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_f5220626bf714b7185aab33e13f44bc7.bindTooltip(
+                `<div>
+                     2021-10-10 02:00:00 - veloc 0.018nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9a3a6796f2a4b3c81e2837eee68bcd3 = L.marker(
+                [-25.515, -42.7268],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c9a3a6796f2a4b3c81e2837eee68bcd3.bindTooltip(
+                `<div>
+                     2021-10-10 03:00:00 - veloc 0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a414ea4ba7ea462c80600e087a8996a0 = L.marker(
+                [-25.5148, -42.7267],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_a414ea4ba7ea462c80600e087a8996a0.bindTooltip(
+                `<div>
+                     2021-10-10 04:00:00 - veloc 0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfeda434415b48e089e75019f65db37d = L.marker(
+                [-25.5187, -42.7308],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_dfeda434415b48e089e75019f65db37d.bindTooltip(
+                `<div>
+                     2021-10-10 16:00:00 - veloc 0.017nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c789a4a204941c99abf17c7698001cb = L.marker(
+                [-25.5183, -42.7301],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_9c789a4a204941c99abf17c7698001cb.bindTooltip(
+                `<div>
+                     2021-10-10 17:00:00 - veloc -0.045nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5eb0a1decfb64001876789c668523b1b = L.marker(
+                [-25.5179, -42.7293],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_5eb0a1decfb64001876789c668523b1b.bindTooltip(
+                `<div>
+                     2021-10-10 18:00:00 - veloc -0.049nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7828852fb5c441f4881c95a6c30eef35 = L.marker(
+                [-25.5177, -42.7288],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_7828852fb5c441f4881c95a6c30eef35.bindTooltip(
+                `<div>
+                     2021-10-10 19:00:00 - veloc -0.028nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cbd535b0bf2441368cd41ee88b310937 = L.marker(
+                [-25.5177, -42.7288],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_cbd535b0bf2441368cd41ee88b310937.bindTooltip(
+                `<div>
+                     2021-10-10 20:00:00 - veloc 0.0nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfe6b920c9e84dd99135a1171ae0896d = L.marker(
+                [-25.5179, -42.7292],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_cfe6b920c9e84dd99135a1171ae0896d.bindTooltip(
+                `<div>
+                     2021-10-10 21:00:00 - veloc 0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54bd0bdeb0f24a569678fc8a7efc3a0e = L.marker(
+                [-25.5182, -42.7297],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_54bd0bdeb0f24a569678fc8a7efc3a0e.bindTooltip(
+                `<div>
+                     2021-10-10 22:00:00 - veloc 0.032nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f1cd92346c74a9e92399f6c48175b6e = L.marker(
+                [-25.5186, -42.73],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_0f1cd92346c74a9e92399f6c48175b6e.bindTooltip(
+                `<div>
+                     2021-10-10 23:00:00 - veloc 0.028nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfc9f13b4ade485f97a391678ececaf8 = L.marker(
+                [-25.5187, -42.7303],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_dfc9f13b4ade485f97a391678ececaf8.bindTooltip(
+                `<div>
+                     2021-10-11 00:00:00 - veloc 0.016nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b156ec07ad2542a584c535959d81867e = L.marker(
+                [-25.5187, -42.7304],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_b156ec07ad2542a584c535959d81867e.bindTooltip(
+                `<div>
+                     2021-10-11 01:00:00 - veloc 0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_642c8f0348d74cce9675984601ce017a = L.marker(
+                [-25.5186, -42.7304],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_642c8f0348d74cce9675984601ce017a.bindTooltip(
+                `<div>
+                     2021-10-11 02:00:00 - veloc -0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d135649378cd43c1a6c63a5a38f87bbe = L.marker(
+                [-25.5186, -42.7305],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_d135649378cd43c1a6c63a5a38f87bbe.bindTooltip(
+                `<div>
+                     2021-10-11 03:00:00 - veloc 0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b018e87253d748e1af4bbd2cea16ba74 = L.marker(
+                [-25.5186, -42.7304],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_b018e87253d748e1af4bbd2cea16ba74.bindTooltip(
+                `<div>
+                     2021-10-11 04:00:00 - veloc -0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab98aa0ab339404391805da9cebe362e = L.marker(
+                [-25.5185, -42.7303],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ab98aa0ab339404391805da9cebe362e.bindTooltip(
+                `<div>
+                     2021-10-11 05:00:00 - veloc -0.008nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cdc21dba5374ed79736e5319b14e7e0 = L.marker(
+                [-25.5183, -42.7299],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_1cdc21dba5374ed79736e5319b14e7e0.bindTooltip(
+                `<div>
+                     2021-10-11 06:00:00 - veloc -0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83edc8f1e3a041638feee45f04a493de = L.marker(
+                [-25.5182, -42.7299],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_83edc8f1e3a041638feee45f04a493de.bindTooltip(
+                `<div>
+                     2021-10-11 07:00:00 - veloc -0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a7a7cee16554308a83ff81471360825 = L.marker(
+                [-25.5184, -42.7303],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_4a7a7cee16554308a83ff81471360825.bindTooltip(
+                `<div>
+                     2021-10-11 08:00:00 - veloc 0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2993e3740e4441149706ecd070ba1f8f = L.marker(
+                [-25.5188, -42.731],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_2993e3740e4441149706ecd070ba1f8f.bindTooltip(
+                `<div>
+                     2021-10-11 09:00:00 - veloc 0.045nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a6092febac6498e9bfc168e24cd8f34 = L.marker(
+                [-25.5193, -42.7319],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_3a6092febac6498e9bfc168e24cd8f34.bindTooltip(
+                `<div>
+                     2021-10-11 10:00:00 - veloc 0.057nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80e2a424997d475a842f9d8237d209a4 = L.marker(
+                [-25.5198, -42.7331],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_80e2a424997d475a842f9d8237d209a4.bindTooltip(
+                `<div>
+                     2021-10-11 11:00:00 - veloc 0.07nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b056aaebfaa488bbb3890681696d840 = L.marker(
+                [-25.5201, -42.734],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_7b056aaebfaa488bbb3890681696d840.bindTooltip(
+                `<div>
+                     2021-10-11 12:00:00 - veloc 0.051nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a63e1d3ce10f41019536a5799484d1ed = L.marker(
+                [-25.5204, -42.7346],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_a63e1d3ce10f41019536a5799484d1ed.bindTooltip(
+                `<div>
+                     2021-10-11 13:00:00 - veloc 0.037nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52e9f4cd7b8f4f6587a41db43eda33d2 = L.marker(
+                [-25.5204, -42.7348],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_52e9f4cd7b8f4f6587a41db43eda33d2.bindTooltip(
+                `<div>
+                     2021-10-11 14:00:00 - veloc 0.009nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_393e166ead6c456a976f4be80efee761 = L.marker(
+                [-25.5204, -42.7346],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_393e166ead6c456a976f4be80efee761.bindTooltip(
+                `<div>
+                     2021-10-11 15:00:00 - veloc -0.009nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c028c00e659b46d1851f8857d4806177 = L.marker(
+                [-25.5203, -42.7339],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c028c00e659b46d1851f8857d4806177.bindTooltip(
+                `<div>
+                     2021-10-11 16:00:00 - veloc -0.035nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f61bda222da437eb11604af35686f9c = L.marker(
+                [-25.5201, -42.7332],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_8f61bda222da437eb11604af35686f9c.bindTooltip(
+                `<div>
+                     2021-10-11 17:00:00 - veloc -0.038nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7573d6b268c24a308c48dcdf74cd69b4 = L.marker(
+                [-25.5199, -42.7323],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_7573d6b268c24a308c48dcdf74cd69b4.bindTooltip(
+                `<div>
+                     2021-10-11 18:00:00 - veloc -0.046nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3933200c9a14c6e97c1526bac3486da = L.marker(
+                [-25.5196, -42.7315],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_d3933200c9a14c6e97c1526bac3486da.bindTooltip(
+                `<div>
+                     2021-10-11 19:00:00 - veloc -0.045nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4e999cd252c4adcaf92d15a0b230337 = L.marker(
+                [-25.5194, -42.7309],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_e4e999cd252c4adcaf92d15a0b230337.bindTooltip(
+                `<div>
+                     2021-10-11 20:00:00 - veloc -0.032nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0589bb344ea49d5bae603cb306c6690 = L.marker(
+                [-25.5194, -42.7308],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c0589bb344ea49d5bae603cb306c6690.bindTooltip(
+                `<div>
+                     2021-10-11 21:00:00 - veloc -0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3675865aa487476b9a2b411983db3547 = L.marker(
+                [-25.5194, -42.7308],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_3675865aa487476b9a2b411983db3547.bindTooltip(
+                `<div>
+                     2021-10-11 22:00:00 - veloc 0.0nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec1cf474704c4d48ae5086c61107ea69 = L.marker(
+                [-25.5195, -42.731],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ec1cf474704c4d48ae5086c61107ea69.bindTooltip(
+                `<div>
+                     2021-10-11 23:00:00 - veloc 0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6e21c6388e4491fad56eff358eda808 = L.marker(
+                [-25.5196, -42.7309],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_f6e21c6388e4491fad56eff358eda808.bindTooltip(
+                `<div>
+                     2021-10-12 00:00:00 - veloc 0.0nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fff328d165c44039484a1a1e7b02bfe = L.marker(
+                [-25.5194, -42.7308],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_4fff328d165c44039484a1a1e7b02bfe.bindTooltip(
+                `<div>
+                     2021-10-12 01:00:00 - veloc -0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51fbc61ad9074fbd80e283db634e48ea = L.marker(
+                [-25.5194, -42.7307],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_51fbc61ad9074fbd80e283db634e48ea.bindTooltip(
+                `<div>
+                     2021-10-12 02:00:00 - veloc -0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cca5137dba4b539630a4004dfa5482 = L.marker(
+                [-25.5192, -42.7305],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_a6cca5137dba4b539630a4004dfa5482.bindTooltip(
+                `<div>
+                     2021-10-12 03:00:00 - veloc -0.016nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c28c021cc9db45369b7717d8a8340562 = L.marker(
+                [-25.5191, -42.7303],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c28c021cc9db45369b7717d8a8340562.bindTooltip(
+                `<div>
+                     2021-10-12 04:00:00 - veloc -0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cfa2d838fe5499d8c4594a9c1caa705 = L.marker(
+                [-25.519, -42.7301],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_6cfa2d838fe5499d8c4594a9c1caa705.bindTooltip(
+                `<div>
+                     2021-10-12 05:00:00 - veloc -0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec06d71eecea4a78a4326c5bf62ad7b1 = L.marker(
+                [-25.519, -42.7302],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ec06d71eecea4a78a4326c5bf62ad7b1.bindTooltip(
+                `<div>
+                     2021-10-12 06:00:00 - veloc 0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2229f6f960a54317b5f9ef0a382cdc53 = L.marker(
+                [-25.5191, -42.7304],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_2229f6f960a54317b5f9ef0a382cdc53.bindTooltip(
+                `<div>
+                     2021-10-12 07:00:00 - veloc 0.012nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c81f71f35ff24407ba14face99d54a25 = L.marker(
+                [-25.5192, -42.7307],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c81f71f35ff24407ba14face99d54a25.bindTooltip(
+                `<div>
+                     2021-10-12 08:00:00 - veloc 0.016nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a4b084c3148441e85612cd417c34247 = L.marker(
+                [-25.5194, -42.7311],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_1a4b084c3148441e85612cd417c34247.bindTooltip(
+                `<div>
+                     2021-10-12 09:00:00 - veloc 0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab35ffabf59c4f289dbc52f9d163a55a = L.marker(
+                [-25.5197, -42.7316],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ab35ffabf59c4f289dbc52f9d163a55a.bindTooltip(
+                `<div>
+                     2021-10-12 10:00:00 - veloc 0.032nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce53a0876901438b891888fe65d2855a = L.marker(
+                [-25.5201, -42.7325],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ce53a0876901438b891888fe65d2855a.bindTooltip(
+                `<div>
+                     2021-10-12 11:00:00 - veloc 0.053nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19029973e39e435eb59215b79d602abd = L.marker(
+                [-25.5203, -42.7333],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_19029973e39e435eb59215b79d602abd.bindTooltip(
+                `<div>
+                     2021-10-12 12:00:00 - veloc 0.042nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe5239d699ab4929a2da76e643bb739c = L.marker(
+                [-25.5204, -42.7337],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_fe5239d699ab4929a2da76e643bb739c.bindTooltip(
+                `<div>
+                     2021-10-12 13:00:00 - veloc 0.021nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad5efd1998e643e79e1940c3c29b463e = L.marker(
+                [-25.5204, -42.7337],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ad5efd1998e643e79e1940c3c29b463e.bindTooltip(
+                `<div>
+                     2021-10-12 14:00:00 - veloc 0.0nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70e62ac87a3e4ab786bb07027ae2efe6 = L.marker(
+                [-25.5203, -42.7334],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_70e62ac87a3e4ab786bb07027ae2efe6.bindTooltip(
+                `<div>
+                     2021-10-12 15:00:00 - veloc -0.017nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15c3a5b1b13147a4916503181702658c = L.marker(
+                [-25.5202, -42.7329],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_15c3a5b1b13147a4916503181702658c.bindTooltip(
+                `<div>
+                     2021-10-12 16:00:00 - veloc -0.025nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1af42e769704ee7b13a1aa8c3ac9a65 = L.marker(
+                [-25.52, -42.7322],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_c1af42e769704ee7b13a1aa8c3ac9a65.bindTooltip(
+                `<div>
+                     2021-10-12 17:00:00 - veloc -0.037nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec8474a3ed814e049527589ceb4a846a = L.marker(
+                [-25.5196, -42.7312],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ec8474a3ed814e049527589ceb4a846a.bindTooltip(
+                `<div>
+                     2021-10-12 18:00:00 - veloc -0.056nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c6be8a9524f44e485f0ed03e4a48ffe = L.marker(
+                [-25.5192, -42.7302],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_7c6be8a9524f44e485f0ed03e4a48ffe.bindTooltip(
+                `<div>
+                     2021-10-12 19:00:00 - veloc -0.055nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f67df0f5271d45cabca5d420485b4065 = L.marker(
+                [-25.5187, -42.7294],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_f67df0f5271d45cabca5d420485b4065.bindTooltip(
+                `<div>
+                     2021-10-12 20:00:00 - veloc -0.051nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a8a94b5285478f98a61d2067065f2c = L.marker(
+                [-25.5183, -42.7288],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_25a8a94b5285478f98a61d2067065f2c.bindTooltip(
+                `<div>
+                     2021-10-12 21:00:00 - veloc -0.039nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7782c143e7c402b8a6d4c945b92638e = L.marker(
+                [-25.518, -42.7284],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_a7782c143e7c402b8a6d4c945b92638e.bindTooltip(
+                `<div>
+                     2021-10-12 22:00:00 - veloc -0.027nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24fb2099a7614601a1c81056eae837a1 = L.marker(
+                [-25.5178, -42.7282],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_24fb2099a7614601a1c81056eae837a1.bindTooltip(
+                `<div>
+                     2021-10-12 23:00:00 - veloc -0.016nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af52ff23285c4fed9cde3c2d0f3deb56 = L.marker(
+                [-25.5177, -42.7281],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_af52ff23285c4fed9cde3c2d0f3deb56.bindTooltip(
+                `<div>
+                     2021-10-13 00:00:00 - veloc -0.008nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b77173c4730f400c93bed586b9d3fd76 = L.marker(
+                [-25.5176, -42.7282],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_b77173c4730f400c93bed586b9d3fd76.bindTooltip(
+                `<div>
+                     2021-10-13 01:00:00 - veloc -0.002nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c849d6290d44f38864dbca4f2e52ef8 = L.marker(
+                [-25.5175, -42.7282],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_7c849d6290d44f38864dbca4f2e52ef8.bindTooltip(
+                `<div>
+                     2021-10-13 02:00:00 - veloc -0.005nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcea356d7e184a369956891b3f91ce41 = L.marker(
+                [-25.5173, -42.7281],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_fcea356d7e184a369956891b3f91ce41.bindTooltip(
+                `<div>
+                     2021-10-13 03:00:00 - veloc -0.013nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72a56dea6d004a8d908cc651f47c2d58 = L.marker(
+                [-25.5168, -42.7277],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_72a56dea6d004a8d908cc651f47c2d58.bindTooltip(
+                `<div>
+                     2021-10-13 04:00:00 - veloc -0.037nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73f7584b0fa44c61a9eb3c1f231be99a = L.marker(
+                [-25.5163, -42.7275],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_73f7584b0fa44c61a9eb3c1f231be99a.bindTooltip(
+                `<div>
+                     2021-10-13 05:00:00 - veloc -0.028nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00f95ee417a3417bb571d650c1e3f7b6 = L.marker(
+                [-25.5158, -42.7271],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_00f95ee417a3417bb571d650c1e3f7b6.bindTooltip(
+                `<div>
+                     2021-10-13 06:00:00 - veloc -0.028nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f5c37604f204b5da0b77e157b53e477 = L.marker(
+                [-25.5156, -42.727],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_6f5c37604f204b5da0b77e157b53e477.bindTooltip(
+                `<div>
+                     2021-10-13 07:00:00 - veloc 0.004nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf5b90244c8482ca2385afe4aae51f8 = L.marker(
+                [-25.5157, -42.7273],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_bbf5b90244c8482ca2385afe4aae51f8.bindTooltip(
+                `<div>
+                     2021-10-13 08:00:00 - veloc 0.009nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84e6a50531634dc49a807586d6dec6dc = L.marker(
+                [-25.5161, -42.7275],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_84e6a50531634dc49a807586d6dec6dc.bindTooltip(
+                `<div>
+                     2021-10-13 09:00:00 - veloc 0.01nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2e78aeb253145f0bb67e5c17cb43d6c = L.marker(
+                [-25.5166, -42.7279],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_a2e78aeb253145f0bb67e5c17cb43d6c.bindTooltip(
+                `<div>
+                     2021-10-13 10:00:00 - veloc 0.033nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c12450df1d848a08cdb8b89cf634949 = L.marker(
+                [-25.5167, -42.728],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_6c12450df1d848a08cdb8b89cf634949.bindTooltip(
+                `<div>
+                     2021-10-13 11:00:00 - veloc 0.008nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eba7197c9bc946248d1c07a2757efad8 = L.marker(
+                [-25.5172, -42.7288],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_eba7197c9bc946248d1c07a2757efad8.bindTooltip(
+                `<div>
+                     2021-10-13 12:00:00 - veloc 0.053nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ffee4e16c6b4dc4af8d0000a5c9a171 = L.marker(
+                [-25.5176, -42.7294],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_6ffee4e16c6b4dc4af8d0000a5c9a171.bindTooltip(
+                `<div>
+                     2021-10-13 13:00:00 - veloc 0.04nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3b12a37eec4e55b6bcabc26f29f550 = L.marker(
+                [-25.5181, -42.7304],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_ef3b12a37eec4e55b6bcabc26f29f550.bindTooltip(
+                `<div>
+                     2021-10-13 14:00:00 - veloc 0.062nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b0c268f9ce04cf7b935014043582f5f = L.marker(
+                [-25.5185, -42.7309],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_4b0c268f9ce04cf7b935014043582f5f.bindTooltip(
+                `<div>
+                     2021-10-13 15:00:00 - veloc 0.036nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68c93c7598504d68929be8609eaa9f98 = L.marker(
+                [-25.5187, -42.7306],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_68c93c7598504d68929be8609eaa9f98.bindTooltip(
+                `<div>
+                     2021-10-13 16:00:00 - veloc -0.006nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ba59705f1c149709f512bd6f2ff57b9 = L.marker(
+                [-25.5185, -42.7302],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_5ba59705f1c149709f512bd6f2ff57b9.bindTooltip(
+                `<div>
+                     2021-10-13 17:00:00 - veloc -0.024nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bf23289b0df4f798671d20768126dac = L.marker(
+                [-25.5181, -42.7292],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_9bf23289b0df4f798671d20768126dac.bindTooltip(
+                `<div>
+                     2021-10-13 18:00:00 - veloc -0.056nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6f42f4509f74491aa3d07152296dbc3 = L.marker(
+                [-25.5174, -42.7283],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_d6f42f4509f74491aa3d07152296dbc3.bindTooltip(
+                `<div>
+                     2021-10-13 19:00:00 - veloc -0.064nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21c8e9bc637e45b0b12b0b17d0809bc7 = L.marker(
+                [-25.5166, -42.7272],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_21c8e9bc637e45b0b12b0b17d0809bc7.bindTooltip(
+                `<div>
+                     2021-10-13 20:00:00 - veloc -0.074nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30ae506202cd4e12bef3c153d0a3f8a4 = L.marker(
+                [-25.5159, -42.7267],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_30ae506202cd4e12bef3c153d0a3f8a4.bindTooltip(
+                `<div>
+                     2021-10-13 21:00:00 - veloc -0.042nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3c7494f246a492bb31d82da44d05b2d = L.marker(
+                [-25.5154, -42.7261],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_d3c7494f246a492bb31d82da44d05b2d.bindTooltip(
+                `<div>
+                     2021-10-13 22:00:00 - veloc 0.043nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9771be5c3bd64f799bc86c198816a89c = L.marker(
+                [-25.5149, -42.7259],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_9771be5c3bd64f799bc86c198816a89c.bindTooltip(
+                `<div>
+                     2021-10-13 23:00:00 - veloc 0.029nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b5739a1779447f58567eea7fb749803 = L.marker(
+                [-25.5146, -42.7257],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            marker_2b5739a1779447f58567eea7fb749803.bindTooltip(
+                `<div>
+                     2021-10-14 00:00:00 - veloc 0.021nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fd46a8471134f81aa408ea8a9a7893b = L.marker(
+                [-25.5058, -42.7241],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_ccfe25f1cfe84826baf8cf0cfa07c0f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3fd46a8471134f81aa408ea8a9a7893b.setIcon(icon_ccfe25f1cfe84826baf8cf0cfa07c0f6);
+        
+    
+            marker_3fd46a8471134f81aa408ea8a9a7893b.bindTooltip(
+                `<div>
+                     2021-10-22 02:24:14 - veloc nannós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86820ba4ee874d308111a7eb09fb6f02 = L.marker(
+                [-25.5066, -42.7265],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_f274f94d4eb74957a674b23c994024c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_86820ba4ee874d308111a7eb09fb6f02.setIcon(icon_f274f94d4eb74957a674b23c994024c6);
+        
+    
+            marker_86820ba4ee874d308111a7eb09fb6f02.bindTooltip(
+                `<div>
+                     2021-10-22 09:25:24 - veloc 0.02nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bba3215390a644c3b180c526116e8708 = L.marker(
+                [-25.5051, -42.7281],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_a4ffce4f494e4008a2ea58c8dc82d8c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bba3215390a644c3b180c526116e8708.setIcon(icon_a4ffce4f494e4008a2ea58c8dc82d8c0);
+        
+    
+            marker_bba3215390a644c3b180c526116e8708.bindTooltip(
+                `<div>
+                     2021-10-22 19:47:55 - veloc 0.008nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_594a1e56e2c74cdfa9690a7c06e83f3c = L.marker(
+                [-25.5003, -42.7278],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_b5b97978f3c247d6819d6ea8e97bc173 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_594a1e56e2c74cdfa9690a7c06e83f3c.setIcon(icon_b5b97978f3c247d6819d6ea8e97bc173);
+        
+    
+            marker_594a1e56e2c74cdfa9690a7c06e83f3c.bindTooltip(
+                `<div>
+                     2021-10-23 07:36:54 - veloc 0.014nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03f9f92923a14451b034ddf30429433a = L.marker(
+                [-25.5033, -42.7243],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_d95e8e0613104e7ca02fb97c043dc987 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_03f9f92923a14451b034ddf30429433a.setIcon(icon_d95e8e0613104e7ca02fb97c043dc987);
+        
+    
+            marker_03f9f92923a14451b034ddf30429433a.bindTooltip(
+                `<div>
+                     2021-10-23 13:11:42 - veloc -0.042nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b841954ef4445618f821b02d023b5f1 = L.marker(
+                [-25.4974, -42.7226],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_2c9f514901ad44fdb69df1861966fd11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7b841954ef4445618f821b02d023b5f1.setIcon(icon_2c9f514901ad44fdb69df1861966fd11);
+        
+    
+            marker_7b841954ef4445618f821b02d023b5f1.bindTooltip(
+                `<div>
+                     2021-10-23 18:45:37 - veloc 0.065nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a2ed556ee8a48ae866b652f7bb7996f = L.marker(
+                [-25.5042, -42.7228],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_cb920298b6ff4f92ada970a3bf5778f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a2ed556ee8a48ae866b652f7bb7996f.setIcon(icon_cb920298b6ff4f92ada970a3bf5778f1);
+        
+    
+            marker_1a2ed556ee8a48ae866b652f7bb7996f.bindTooltip(
+                `<div>
+                     2021-10-24 00:54:54 - veloc -0.064nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d6fbfd8c93548ef90673cb0dd4f10b4 = L.marker(
+                [-25.5089, -42.701],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_645aa9e277e14335b4d2877e87472bd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4d6fbfd8c93548ef90673cb0dd4f10b4.setIcon(icon_645aa9e277e14335b4d2877e87472bd1);
+        
+    
+            marker_4d6fbfd8c93548ef90673cb0dd4f10b4.bindTooltip(
+                `<div>
+                     2021-10-24 07:06:17 - veloc 0.185nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cf6cfa3836a436283e7b7931ed58536 = L.marker(
+                [-25.5041, -42.7436],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_1b0f60fc0ad44f94a4bbcbacc465feac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1cf6cfa3836a436283e7b7931ed58536.setIcon(icon_1b0f60fc0ad44f94a4bbcbacc465feac);
+        
+    
+            marker_1cf6cfa3836a436283e7b7931ed58536.bindTooltip(
+                `<div>
+                     2021-10-24 12:53:18 - veloc -0.035nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae48d3c953684e71a51874a43bc78c7b = L.marker(
+                [-25.4972, -42.6343],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_5020f1ed81ef4475a1002e0c580a43ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae48d3c953684e71a51874a43bc78c7b.setIcon(icon_5020f1ed81ef4475a1002e0c580a43ab);
+        
+    
+            marker_ae48d3c953684e71a51874a43bc78c7b.bindTooltip(
+                `<div>
+                     2021-10-24 23:00:35 - veloc 0.378nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff1e1f74f529470697f528bdf40223f4 = L.marker(
+                [-25.5238, -42.7406],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_16d9277b5a5e46d293ce9e7a66c63b33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff1e1f74f529470697f528bdf40223f4.setIcon(icon_16d9277b5a5e46d293ce9e7a66c63b33);
+        
+    
+            marker_ff1e1f74f529470697f528bdf40223f4.bindTooltip(
+                `<div>
+                     2021-10-25 00:25:06 - veloc -2.477nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f79081e5b494f8cbd0ed8d1d03780ed = L.marker(
+                [-25.5153, -42.7493],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_1caf0dd6b4754b7cb39c1efeedc34599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f79081e5b494f8cbd0ed8d1d03780ed.setIcon(icon_1caf0dd6b4754b7cb39c1efeedc34599);
+        
+    
+            marker_3f79081e5b494f8cbd0ed8d1d03780ed.bindTooltip(
+                `<div>
+                     2021-10-25 10:57:32 - veloc 0.007nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14363823aa0e439b89291b91a669e7b3 = L.marker(
+                [-25.543, -42.5635],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_10cfeec8973e49859b0e40ef5929f45a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_14363823aa0e439b89291b91a669e7b3.setIcon(icon_10cfeec8973e49859b0e40ef5929f45a);
+        
+    
+            marker_14363823aa0e439b89291b91a669e7b3.bindTooltip(
+                `<div>
+                     2021-10-25 23:23:01 - veloc 0.604nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e593fa96e19d46a2b3dbcbc22cd3b749 = L.marker(
+                [-25.4718, -42.5072],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_b585eaa937d54905b5f654a22bd605e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e593fa96e19d46a2b3dbcbc22cd3b749.setIcon(icon_b585eaa937d54905b5f654a22bd605e9);
+        
+    
+            marker_e593fa96e19d46a2b3dbcbc22cd3b749.bindTooltip(
+                `<div>
+                     2021-10-26 11:18:47 - veloc 0.247nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b005feda974b4aea845ed08143ccda6e = L.marker(
+                [-25.5071, -42.4981],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_97270d30d7ae4c7cac60ce9978e35a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b005feda974b4aea845ed08143ccda6e.setIcon(icon_97270d30d7ae4c7cac60ce9978e35a33);
+        
+    
+            marker_b005feda974b4aea845ed08143ccda6e.bindTooltip(
+                `<div>
+                     2021-10-26 22:25:00 - veloc 0.028nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2a085573faf4828a8ecc786fab1fad7 = L.marker(
+                [-25.4732, -42.4081],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_c1afcd4ddcc14c29b83f8c1313b2a990 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2a085573faf4828a8ecc786fab1fad7.setIcon(icon_c1afcd4ddcc14c29b83f8c1313b2a990);
+        
+    
+            marker_a2a085573faf4828a8ecc786fab1fad7.bindTooltip(
+                `<div>
+                     2021-10-27 10:25:47 - veloc 0.415nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0767bbaaaa954bb09ecba3e34715746e = L.marker(
+                [-25.4732, -42.4081],
+                {}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+    
+            var icon_3ab08a7e234e4eebbf2233bdd7dcff33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0767bbaaaa954bb09ecba3e34715746e.setIcon(icon_3ab08a7e234e4eebbf2233bdd7dcff33);
+        
+    
+            marker_0767bbaaaa954bb09ecba3e34715746e.bindTooltip(
+                `<div>
+                     2021-10-27 10:25:47 - veloc 0.415nós
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a400445847f4d2a9dd0fce3652353b2 = L.circle(
+                [-25.508, -42.736],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1300, "stroke": true, "weight": 3}
+            ).addTo(map_e84967ac0ef14cf2ac39f8d5b4b60a2e);
+        
+</script>
